@@ -44,3 +44,8 @@
 	composes: icon;
 	background-image: url('/img/pencil.svg');
 }
+
+.heart {
+	composes: icon;
+	background-image: url('/img/heart.svg');
+}

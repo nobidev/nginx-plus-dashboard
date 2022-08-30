@@ -3,3 +3,14 @@
 	background-color: #e6e6e6;
 	margin-top: -53px;
 }
+
+.icon-heart {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 2px!important;
+	margin: 2px 5px 2px 0;
+	overflow: hidden;
+	padding: 0!important;
+	vertical-align: middle;
+}

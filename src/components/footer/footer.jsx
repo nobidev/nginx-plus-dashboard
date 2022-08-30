@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import Icon from '../icon/icon.jsx';
 import styles from './style.css';
 
 export default class Footer extends React.Component {
@@ -15,6 +16,8 @@ export default class Footer extends React.Component {
 	}
 
 	render() {
-		return <div className={ styles.footer }>© NGINX, Inc. All rights reserved.</div>;
+		const year = new Date().getFullYear();
+		const owner = location.hostname;
+		return <div className={ styles.footer }>&copy; {year} {owner}, all rights reserved. Made with <Icon className={ `${ styles['icon-heart'] }` } type="heart" /> from NobiDev.</div>;
 	}
 };

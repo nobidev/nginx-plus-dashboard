@@ -114,11 +114,11 @@ export class App extends React.Component {
 		return (
 			<div className={ styles.dashboard }>
 
-				{
+				{/* {
 					__ENV__ === 'demo' ?
 						<Disclaimer />
 					: null
-				}
+				} */}
 
 				<Header hash={this.state.hash} navigation={!error} statuses={STORE.__STATUSES} />
 
