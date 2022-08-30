@@ -133,10 +133,14 @@ const config = {
         hot: true,
         port: 8082,
         proxy: [{
-            context: ['/api', '/status'],
+            context: ['/nginx-api', '/nginx-status'],
             target: PROXY_TARGET,
             secure: true,
-            changeOrigin: true
+            changeOrigin: true,
+            pathRewrite: {
+                '^/nginx-api/': '/api/',
+                '^/nginx-status/': '/status/',
+            },
         }],
         devMiddleware: {
             writeToDisk: true
